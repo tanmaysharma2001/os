@@ -1,0 +1,2 @@
+total 0
+-rwxrwxrwx 1 tanmay tanmay 0 Aug 31 22:09 root.txt

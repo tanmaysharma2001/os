@@ -1,0 +1,409 @@
+    1  sudo apt update && sudo apt upgrade -y
+    2  ping localhost
+    3  sudo mkdir /media/cdrom
+    4  sudo mount -o loop ubuntu-*.iso /media/cdrom
+    5  nmcli d
+    6  nmcli device show eno2 | grep IP4.DNS
+    7  sudo lshw -class network
+    8  cd /etc/pm/sleep.d
+    9  ls
+   10  sudo touch config
+   11  ls
+   12  sudo gedit config
+   13  echo "options RTL8111/8168/8411 fwlps=N" | sudo tee /etc/modprobe.d/RTL8111/8168/8411.conf
+   14  echo "options RTL8111 fwlps=N" | sudo tee /etc/modprobe.d/RTL8111.conf
+   15  sudo lshw -class network
+   16  sudo nano /etc/NetworkManager/conf.d/default-wifi-powersave-on.conf
+   17  [200~sudo nano /etc/NetworkManager/conf.d/default-wifi-powersave-on.conf
+   18  sudo nano /etc/NetworkManager/conf.d/default-wifi-powersave-on.conf
+   19  sudo nano /etc/gai.conf
+   20  nmcli
+   21  lshw -C network
+   22  sudo pccardctl ident
+   23  sudo mkdir /media/cdrom
+   24  sudo mount -o loop ubuntu-* /media/cdrom
+   25  Sudo lshw –C network
+   26  sudo lshw –C network
+   27  sudo apt remove Broadcom-sta-dkms bcmwl-kernel-source
+   28  apt-get install Broadcom-sta-dkms
+   29  sudo apt-get install Broadcom-sta-dkms
+   30  sudo apt-get install dkms
+   31  Sudo lshw –C network
+   32  sudo lshw –C network
+   33  sudo apt remove Broadcom-sta-dkms bcmwl-kernel-source
+   34  sudo apt-get install Broadcom-sta-dkms
+   35  lshw -C network
+   36  lspci
+   37  lspci -v
+   38  sudo lshw -C network
+   39  lspci -nnk | grep -A2 0280
+   40  whoami
+   41  sudo apt-get install --reinstall git dkms build-essential linux-headers-$(tanmay -r)
+   42  git clone https://github.com/tomaspinho/rtl8821ce
+   43  cd rtl8821ce
+   44  ls
+   45  chmod +x dkms-install.sh
+   46  chmod +x dkms-remove.sh
+   47  sudo ./dkms-install.sh
+   48  sudo su
+   49  ls
+   50  cd Downloads/
+   51  ls
+   52  ..
+   53  ...
+   54  cd home/
+   55  cd ..
+   56  sudo apt upgrade && sudo apt upgrade -y
+   57  ls
+   58  cd Downloads/
+   59  ls
+   60  sudo apt-get install google-chrome-stable_current_amd64.deb
+   61  python
+   62  python-3
+   63  python3
+   64  sudo su
+   65  code .
+   66  python3
+   67  sudo apt-get update
+   68  sudo apt-get install build-essential
+   69  sudo apt install g++
+   70  g++ --version
+   71  sudo snap install clion --classic
+   72  sudo snap install intellij-idea-community --classic
+   73  g++ main.cpp -o test
+   74  code .
+   75  git --version
+   76  sudo apt-get install git
+   77  git --version
+   78  git config --global user.name "Tanmay Sharma"
+   79  git config --global user.email "sharmatanmay617@gmail.com"
+   80  git status
+   81  code .
+   82  node -v
+   83  sudo apt-cache show nodejs
+   84  sudo apt install nodejs
+   85  node --v
+   86  node --version
+   87  node -v
+   88  node
+   89  npm run dev
+   90  sudo apt install npm
+   91  npm run dev
+   92  npm install
+   93  curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
+   94  sudo apt install curl
+   95  curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
+   96  sudo apt-get install -y nodejs
+   97  node --version
+   98  clear
+   99  sudo npm cache clean -f
+  100  node
+  101  node --version
+  102  sudo apt-get install npm
+  103  sudo npm cache clean -f
+  104  sudo npm install -g n
+  105  sudo n stable
+  106  sudo n latest
+  107  sudo apt-get install --reinstall nodejs-legacy
+  108  node --version
+  109  npm install
+  110  npm run dev
+  111  java --version
+  112  python3
+  113  g++ main.cpp -o main
+  114  ./main
+  115  code .
+  116  clion .
+  117  python3
+  118  code .
+  119  git clone https://github.com/tanmaysharma2001/quizmaster.git
+  120  code .
+  121  npm install
+  122  npm run dev
+  123  code .
+  124  npm add -D firebase
+  125  git status
+  126  git clone https://github.com/tanmaysharma2001/quizmaster.git
+  127  npm install --save-dev @sveltejs/adapter-static
+  128  npm run dev
+  129  npm run build
+  130  npm install --save-dev rollup-plugin-copy-assets
+  131  npm run build
+  132  npm run dev
+  133  npm install firebase
+  134  npm run dev
+  135  npm run build
+  136  git status
+  137  code .
+  138  git status
+  139  npm run build
+  140  code .
+  141  npm run build
+  142  npm run preview
+  143  npm run dev
+  144  npm run build
+  145  npm run dev
+  146  sudo snap install todoist
+  147  clear
+  148  npm run dev
+  149  clear
+  150  code .
+  151  clion .
+  152  git clone https://github.com/tanmaysharma2001/quizmaster.git
+  153  cd qui
+  154  cd quizmaster/
+  155  code .
+  156  npm run build
+  157  git status
+  158  npm run dev
+  159  npm run build
+  160  npm install
+  161  npm run dev
+  162  clear
+  163  code .
+  164  npm run build
+  165  npm run dev
+  166  npm run build
+  167  npm run dev
+  168  npm run build
+  169  npx create-react-app personal-portfolio
+  170  cd personal-portfolio/
+  171  npm install react-bootstrap bootstrap
+  172  code .
+  173  node
+  174  sudo apt install ubuntu-restricted-extras
+  175  code .
+  176  clion .
+  177  java --version
+  178  sudo apt install default-jdk
+  179  java --version
+  180  sudo apt install default-jre
+  181  cd "/home/tanmay/Tanmay/test codes/" && g++ main.cpp -o main && "/home/tanmay/Tanmay/test codes/"main
+  182  code .
+  183  cd "/home/tanmay/Tanmay/test codes/" && g++ main.cpp -o main && "/home/tanmay/Tanmay/test codes/"main
+  184  clear
+  185  cd "/home/tanmay/Tanmay/test codes/" && g++ main.cpp -o main && "/home/tanmay/Tanmay/test codes/"main
+  186  cd "/home/tanmay/Tanmay/test codes/" && g++ matrixDiagonals.cpp -o matrixDiagonals && "/home/tanmay/Tanmay/test codes/"matrixDiagonals
+  187  sudo apt-get install sublime text
+  188  [200~wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/sublimehq-archive.gpg
+  189  wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/sublimehq-archive.gpg
+  190  echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
+  191  sudo apt-get install sublime-text
+  192  snap install sublime-text
+  193  wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/sublimehq-archive.gpg
+  194  sudo apt-get install apt-transport-https
+  195  echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
+  196  sudo apt-get update
+  197  sudo apt-get install sublime-text
+  198  sublime-text .
+  199  subl .
+  200  ifconfig
+  201  python3
+  202  cd "/home/tanmay/Tanmay/test codes/" && javac twoSortedLists.java && java twoSortedLists
+  203  sudo apt-get remove sublime-text
+  204  node test.js
+  205  node "/home/tanmay/Tanmay/test codes/test.js"
+  206  cd "/home/tanmay/Tanmay/test codes/" && javac twoSortedLists.java && java twoSortedLists
+  207  cd "/home/tanmay/Tanmay/test codes/" && g++ contains-duplicate.cpp -o contains-duplicate && "/home/tanmay/Tanmay/test codes/"contains-duplicate
+  208  cd "/home/tanmay/Tanmay/test codes/" && g++ tempCodeRunnerFile.cpp -o tempCodeRunnerFile && "/home/tanmay/Tanmay/test codes/"tempCodeRunnerFile
+  209  cd "/home/tanmay/Tanmay/test codes/" && g++ contains-duplicate.cpp -o contains-duplicate && "/home/tanmay/Tanmay/test codes/"contains-duplicate
+  210  cd "/home/tanmay/Tanmay/test codes/" && g++ upwardsDiagonally.cpp -o upwardsDiagonally && "/home/tanmay/Tanmay/test codes/"upwardsDiagonally
+  211  cd "/home/tanmay/Tanmay/test codes/" && g++ matrixDiagonals.cpp -o matrixDiagonals && "/home/tanmay/Tanmay/test codes/"matrixDiagonals
+  212  sudo apt install ts-node
+  213  sudo apt-get remove ts-node
+  214  ts-node
+  215  npm install -g typescript
+  216  typescript
+  217  ts-node "/home/tanmay/Tanmay/test codes/test.ts"
+  218  clear
+  219  ts-node "/home/tanmay/Tanmay/test codes/test.ts"
+  220  ts-node
+  221  npm install -g typescript
+  222  sudo npm install -g typescript
+  223  ts-node
+  224  ts-node "/home/tanmay/Tanmay/test codes/test.ts"
+  225  sudo npm install -g ts-node
+  226  ts-node "/home/tanmay/Tanmay/test codes/test.ts"
+  227  sudo apt install ts-node
+  228  ts-node "/home/tanmay/Tanmay/test codes/test.ts"
+  229  tsc test.ts
+  230  node test.js
+  231  cd "/home/tanmay/Tanmay/test codes/" && g++ test.cpp -o test && "/home/tanmay/Tanmay/test codes/"test
+  232  python3
+  233  cd "/home/tanmay/Tanmay/test codes/" && g++ test.cpp -o test && "/home/tanmay/Tanmay/test codes/"test
+  234  5cd "/home/tanmay/Tanmay/test codes/" && g++ test.cpp -o test && "/home/tanmay/Tanmay/test codes/"test
+  235  cd "/home/tanmay/Tanmay/test codes/" && g++ test.cpp -o test && "/home/tanmay/Tanmay/test codes/"test
+  236  5cd "/home/tanmay/Tanmay/test codes/" && g++ test.cpp -o test && "/home/tanmay/Tanmay/test codes/"test
+  237  cd "/home/tanmay/Tanmay/test codes/" && g++ test.cpp -o test && "/home/tanmay/Tanmay/test codes/"test
+  238  cd "/home/tanmay/Tanmay/test codes/" && g++ tempCodeRunnerFile.cpp -o tempCodeRunnerFile && "/home/tanmay/Tanmay/test codes/"tempCodeRunnerFile
+  239  cd "/home/tanmay/Tanmay/test codes/" && g++ test.cpp -o test && "/home/tanmay/Tanmay/test codes/"test
+  240  cd "/home/tanmay/Tanmay/test codes/" && g++ tempCodeRunnerFile.cpp -o tempCodeRunnerFile && "/home/tanmay/Tanmay/test codes/"tempCodeRunnerFile
+  241  cd "/home/tanmay/Tanmay/test codes/" && g++ test.cpp -o test && "/home/tanmay/Tanmay/test codes/"test
+  242  cd "/home/tanmay/Tanmay/test codes/" && g++ tempCodeRunnerFile.cpp -o tempCodeRunnerFile && "/home/tanmay/Tanmay/test codes/"tempCodeRunnerFile
+  243  cd "/home/tanmay/Tanmay/test codes/" && g++ test.cpp -o test && "/home/tanmay/Tanmay/test codes/"test
+  244  ls
+  245  cd downloads
+  246  cd Downloads/
+  247  ls
+  248  cd "/home/tanmay/Tanmay/test codes/" && g++ test.cpp -o test && "/home/tanmay/Tanmay/test codes/"test
+  249  cd "/home/tanmay/Tanmay/test codes/" && g++ test.cpp -o test && "/home/tanmay/Tanmay/test codes/"test
+  250  python3
+  251  cd "/home/tanmay/Tanmay/test codes/" && g++ test.cpp -o test && "/home/tanmay/Tanmay/test codes/"test
+  252  sudo apt-get upgrade brave
+  253  cd "/home/tanmay/Tanmay/test codes/" && g++ test.cpp -o test && "/home/tanmay/Tanmay/test codes/"test
+  254  5cd "/home/tanmay/Tanmay/test codes/" && g++ test.cpp -o test && "/home/tanmay/Tanmay/test codes/"test
+  255  cd "/home/tanmay/Tanmay/test codes/" && g++ test.cpp -o test && "/home/tanmay/Tanmay/test codes/"test
+  256  5cd "/home/tanmay/Tanmay/test codes/" && g++ test.cpp -o test && "/home/tanmay/Tanmay/test codes/"test
+  257  cd "/home/tanmay/Tanmay/test codes/" && g++ test.cpp -o test && "/home/tanmay/Tanmay/test codes/"test
+  258  cls
+  259  clear
+  260  cd "/home/tanmay/Tanmay/test codes/" && g++ test.cpp -o test && "/home/tanmay/Tanmay/test codes/"test
+  261  cd "/home/tanmay/Tanmay/test codes/" && g++ newtest.cpp -o newtest && "/home/tanmay/Tanmay/test codes/"newtest
+  262  clear
+  263  cd "/home/tanmay/Tanmay/test codes/" && g++ test.cpp -o test && "/home/tanmay/Tanmay/test codes/"test
+  264  python3
+  265  node
+  266  cd "/home/tanmay/Tanmay/test codes/" && g++ test.cpp -o test && "/home/tanmay/Tanmay/test codes/"test
+  267  cd "/home/tanmay/Tanmay/test codes/" && g++ tempCodeRunnerFile.cpp -o tempCodeRunnerFile && "/home/tanmay/Tanmay/test codes/"tempCodeRunnerFile
+  268  cd "/home/tanmay/Tanmay/test codes/" && g++ test.cpp -o test && "/home/tanmay/Tanmay/test codes/"test
+  269  code .
+  270  cd "/home/tanmay/Tanmay/test codes/" && g++ test.cpp -o test && "/home/tanmay/Tanmay/test codes/"test
+  271  npm -v
+  272  java -version
+  273  npm install -g eolang
+  274  sudo npm install -g eolang
+  275  touch hello.eo
+  276  code hello.eo
+  277  eoc dataize hello
+  278  code .
+  279  https://github.com/cqfn/eo.git
+  280  git clone [200~https://github.com/cqfn/eo.git~
+  281  git clone https://github.com/cqfn/eo.git
+  282  cd eo
+  283  mvn clean install
+  284  sudo apt install maven
+  285  cd sandbox/hse
+  286  eoc link
+  287  eoc --alone dataize app
+  288  eoc link
+  289  eoc --alone dataize app
+  290  sudo snap install pycharm-community --classic
+  291  eoc link
+  292  eoc --alone dataize app
+  293  code .
+  294  eoc link
+  295  mvn clean install
+  296  cd sandbox/hse
+  297  eoc link
+  298  eoc --alone dataize app
+  299  eoc link
+  300  code .
+  301  mvn clean test
+  302  sudo apt install ./zoom_amd64.deb
+  303  sudo apt install ./teams_1.5.00.10453_amd64.deb
+  304  python3
+  305  code .
+  306  eoc link
+  307  eoc --alone dataize app
+  308  eoc link
+  309  eoc --alone dataize app
+  310  eoc link
+  311  eoc --alone dataize app
+  312  eoc link
+  313  eoc --alone dataize app
+  314  eoc link
+  315  eoc --alone dataize app
+  316  pip install django
+  317  sudo apt install python3-pip
+  318  pip install django
+  319  python -m django --version
+  320  python
+  321  python3 -m django --version
+  322  django -admin
+  323  django-admin
+  324  sudo apt install python3-django
+  325  django-admin
+  326  printenv > /tmp/tmp-13487mjazXw2w6WZXtxt
+  327  django-admin startproject django_project
+  328  cd django_project
+  329  ls
+  330  code .
+  331  tree
+  332  python manage.py runserver
+  333  python3 manage.py runserver
+  334  python3 manage.py startapp blog
+  335  ls
+  336  python3 manage.py runserver
+  337  python manage.py runserver
+  338  python3 manage.py runserver
+  339  whoami
+  340  hostname
+  341  pwd
+  342  ls
+  343  cd Tanmay/
+  344  ls
+  345  cd test codes
+  346  cd 'test codes'
+  347  ls
+  348  gedit test.cpp
+  349  .
+  350  ls .
+  351  cd ~
+  352  history
+  353  jobs
+  354  jobs -l
+  355  touch namelist.txt
+  356  ls
+  357  gedit namelist.txt
+  358  sort -r namelist.txt > namelist.sorted
+  359  ls
+  360  gedit namelist.sorted
+  361  man man
+  362  clear
+  363  ls
+  364  ls > list.txt
+  365  ls
+  366  gedit list.txt
+  367  gedit list.txt &
+  368  jobs
+  369  ls
+  370  touch ex1.sh
+  371  ls
+  372  gedit ex1.sh
+  373  gnome-open
+  374  gnome-open PATH
+  375  gio open .
+  376  tail -n 5 usr/bin | sort -r > ex1.txt
+  377  cd usr/bin
+  378  tail -n 5 /usr/bin | sort -r > ex1.txt
+  379  cd /usr/bin
+  380  grep "gcc" . > names.txt
+  381  grep "gcc" .
+  382  grep "gcc" /usr/bin
+  383  grep "gcc" /usr/bin/
+  384  ls
+  385  grep "gcc" /usr/bin/*
+  386  grep "gcc" /usr/bin
+  387  grep -H "gcc" /usr/bin
+  388  cd ~
+  389  grep -H "gcc" /usr/bin
+  390  ls
+  391  cd Tanmay/
+  392  ls
+  393  grep -H "Repos" .
+  394  cd ~
+  395  grep -R "gcc" /usr/bin
+  396  find /usr/bin -maxdepth 1 -name "*gcc*" -print
+  397  find /usr/bin -maxdepth 1 -name "*gcc*" | tail -n 5
+  398  find /usr/bin -maxdepth 1 -name "*gcc*" | tail -n 5 | sort -r
+  399  find /usr/bin -maxdepth 1 -name "*gcc*" | tail -n 5 | sort -r > ex1.txt
+  400  ls
+  401  gio open
+  402  gio open .
+  403  clear
+  404  find /usr/bin -maxdepth 1 -name "*gcc*" | tail -n 5 | sort -r > ex1.txt
+  405  gedit ex1.txt
+  406  clear
+  407  ./ex1.sh
+  408  gedit ex1.txt
+  409  history > ex2.txt
