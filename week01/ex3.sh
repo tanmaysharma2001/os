@@ -1,3 +1,6 @@
+date
+sleep 3
+
 mkdir root
 cd root
 touch root.txt

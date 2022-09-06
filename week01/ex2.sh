@@ -1,1 +1,1 @@
-history > ex2.txt
+history > ~/week1/ex2.txt
