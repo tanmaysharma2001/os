@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 
 int tribonacci(int n);
 
@@ -29,11 +30,10 @@ int tribonacci(int n) {
     return curr;
 }
 
-int main() {
-    int n;
+int main(int argc, char *argv[]) {    
+    for(int i = 1; i < argc; i++) {
+        int n = atoi(argv[i]);
+        printf("%d\n", tribonacci(n));
+    }
 
-    printf("Enter the value of n: ");
-    scanf("%d", &n);
-
-    printf("%d\n", tribonacci(n));
 }
