@@ -1,8 +1,30 @@
 #include <stdio.h>
 #include <string.h>
 
+int isConvertible(long long int x, int s) {
+    char strring[256];
+    int lengthOfString = sprintf(strring, "%lld", x);
+
+    int flag = 1;
+
+    for(int i = 0; i < strlen(strring); i++) {
+        int currentNumber = strring[i] - '0';
+        if(currentNumber >= s) {
+            flag = 0;
+            break;
+        }
+    }
+
+    return flag;
+}
+
 void convert(long long int x, int s, int t)
 {
+
+    if(!isConvertible(x, s)) {
+        printf("Cannot Convert!\n");
+        return;
+    }
 
     long long int decimal = 0;
 
