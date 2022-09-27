@@ -10,14 +10,23 @@
 int main(int argc, char const *argv[])
 {
 
-	char userCommand[MAX_SIZE];
+	// the process id that we will get in the child process which will be zero.
+	pid_t pid1 = fork();
 
-	while (true)
+	// when it is in the child process, only then it will enter in the shell operation.
+	if (pid1 == 0)
 	{
-		fgets(userCommand, 100, stdin);
+		char userCommand[MAX_SIZE];
 
-		system(userCommand);
+		while (true)
+		{
+			fgets(userCommand, 100, stdin);
+
+			system(userCommand);
+		}
 	}
+
+	wait(NULL);
 
 	return EXIT_SUCCESS;
 }

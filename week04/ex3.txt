@@ -1,12 +1,3 @@
-// The results of the first run for 3 fork calls
-Every five seconds, a fork is created from every running process. At the beginning, only the manually executed process is created and it created on more process. Then, each one of them creates one more, and so forth. Note that the resulting hierarchy is a binomial tree of order n, where n os the number of seconds.
+The program has a sleep counter of five seconds, that is after every five seconds a fork is called (which creates a child process). In the first iteration, only the main process is in the existence, but after the further iterations, the new child process creates their own child process, leading to the creation of 2^(n) processes, which in this case is 8 process.
 
-
-// The results of the second run for 5 fork calls
-
-
-
-// The difference
-
-
-
+Simillar to the 3 fork calls, the five fork calls will also go and create many child process, around 2^(5) = 32 processes.
