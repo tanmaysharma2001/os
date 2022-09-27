@@ -7,7 +7,6 @@
 
 int dotprod(int u[], int v[], int start, int end)
 {
-
 	int result = 0;
 
 	for (int i = start; i <= end; i++)
@@ -20,9 +19,6 @@ int dotprod(int u[], int v[], int start, int end)
 
 int main(void)
 {
-
-	// <WRITE YOUR CODE HERE>
-
 	int u[MAX_SIZE];
 	int v[MAX_SIZE];
 
