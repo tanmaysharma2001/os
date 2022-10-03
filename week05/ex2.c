@@ -56,10 +56,8 @@ int main()
             return EXIT_SUCCESS;
         }
         printf("Thread %d is created.\n", i);
-    }
+        pthread_join(pthreads[i], NULL);
 
-    for(int i = 0; i < n; i++) {
-        if(pthread_join(pthreads[i], NULL));
     }
 
     return EXIT_SUCCESS;

@@ -7,7 +7,7 @@
 #include <string.h>
 
 // <WRITE YOUR CODE HERE>
-int main() {
+int main(int argc, char* argv[]) {
     int fd;
 
     //FIFO file path
@@ -17,17 +17,23 @@ int main() {
     mkfifo(myfifo, 0666);
 
     char message[200];
+    int n = atoi(argv[1]);
+
+    fd = open(myfifo, O_WRONLY);
 
     while(1) {
-        fd = open(myfifo, O_WRONLY);
 
         // enter the message
         fgets(message, 200, stdin);
 
-        write(fd, message, strlen(message) + 1);
+        for (int i = 0; i < n; i++) {
+            write(fd, message, strlen(message) + 1);
+            sleep(n);
+        }
 
-        close(fd);
     }
+
+    close(fd);
 
     return 0;
 }

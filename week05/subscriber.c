@@ -15,15 +15,17 @@ int main() {
     mkfifo(myfifo, 0666);
 
     char message[200];
+    fd1 = open(myfifo, O_RDONLY);
+    
 
     while(1) {
-        fd1 = open(myfifo, O_RDONLY);
         read(fd1, message, 200);
 
         printf("%s", message);
-        close(fd1);
+        sleep(1);
     }
-
+    close(fd1);
+    
     return 0;
 }
 

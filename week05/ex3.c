@@ -38,8 +38,10 @@ void *prime_counter(void *arg)
 
     prime_counter_request *currentRequest = (prime_counter_request*) arg;
 
-    return (void**) primes_count_in_interval(currentRequest->start, currentRequest->finish);
+    int* result = malloc(sizeof(int));
+    *result = primes_count_in_interval(currentRequest->start, currentRequest->finish);
 
+    return result;
 }
 
 int main(int argc, char *argv[])
@@ -63,14 +65,14 @@ int main(int argc, char *argv[])
 
           Second, spawn a thread that takes requests[i] as an argument. Be careful how you pass the arguments.
         */
-        pthread_t thread = threads[i];
+        // pthread_t thread = threads[i];
 
-        prime_counter_request currentRequest = requests[i];
+        // prime_counter_request currentRequest = 
 
-        currentRequest.start = segment_size * i;
-        currentRequest.finish = segment_size*i + segment_size - 1;
+        requests[i].start = segment_size * i;
+        requests[i].finish = segment_size*i + segment_size;
 
-        if(pthread_create(&thread, NULL, &prime_counter, &currentRequest) != 0) {
+        if(pthread_create(&threads[i], NULL, &prime_counter, &requests[i]) != 0) {
             printf("Error in creating a thread.\n");
             return EXIT_FAILURE;
         }
@@ -86,8 +88,9 @@ int main(int argc, char *argv[])
     }
 
     int total_result = 0;
-    for (int i = 0; i < n_threads; i++)
+    for (int i = 0; i < n_threads; i++) {
         total_result += *(int *)results[i];
+    }
 
     /*
       TODO

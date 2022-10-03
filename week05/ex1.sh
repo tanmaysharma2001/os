@@ -1,11 +1,8 @@
-#!/bin/bash
-gnome-terminal -e "bash -c 'gcc publisher.c -o publisher ; ./publisher; bash;'"
+gcc -o publisher publisher.c
+gcc -o subscriber subscriber.c
 
-x=1
-while [ $x -le $1 ]
-do
-    gnome-terminal -e "bash -c 'gcc subscriber.c -o subscriber ; ./subscriber; bash;'"
-    x=$(( $x + 1 ))
+for ((i = 0; i < $1; ++i)) do 
+    gnome-terminal -- "./subscriber"
 done
 
-clear
+gnome-terminal -- "./publisher" $1
