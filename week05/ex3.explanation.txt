@@ -1,0 +1,1 @@
+In exercise 3, we compute the number of primes in a specific range (0, n] by dividing the it in m equal parts. Each thread finds the number of primes in the sub-part of the range which is of length n / m. dividing the problem into threads reduce the total time of the execution.

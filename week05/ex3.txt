@@ -1,5 +1,30 @@
-Completed in 5 seconds
-Completed in 3 seconds
-Completed in 2 seconds
-Completed in 1 seconds
-Completed in 1 seconds
+m = 1
+
+real	0m10.197s
+user	0m8.844s
+sys	0m0.016s
+
+m = 2
+
+real	0m5.042s
+user	0m7.016s
+sys	0m0.016s
+
+m = 4
+
+real	0m2.617s
+user	0m7.391s
+sys	0m0.016s
+
+m = 10
+
+real	0m1.567s
+user	0m8.859s
+sys	0m0.016s
+
+m = 100
+
+real	0m1.245s
+user	0m9.578s
+sys	0m0.016s
+

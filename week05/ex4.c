@@ -48,14 +48,14 @@ void *check_primes(void *arg)
    while (1) {
         pthread_mutex_lock(&global_lock);
         int val = get_number_to_check();
-        if (val == n) {
-            pthread_mutex_unlock(&global_lock);
-            return 0;
-        } else {
-            if (is_prime(val)) 
-                increment_primes();
-        }
         pthread_mutex_unlock(&global_lock);
+        if (val == n) 
+          break;
+        if (is_prime(val)) {
+          pthread_mutex_lock(&global_lock);
+          increment_primes();
+          pthread_mutex_unlock(&global_lock);
+        }
    }
 }
 

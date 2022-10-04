@@ -1,0 +1,3 @@
+Simillar to ex3, the exercise 4 also uses the concept of m threads to divide a process into subprocess to solve a task efficiently.
+But in contrast to ex3, we use the concept of mutex and locking a the critical section code until a thread finish executing it's part
+preventing overwriting the same variable and miscounting.

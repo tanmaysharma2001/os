@@ -6,8 +6,7 @@ n=10000000
 
 for m in 1 2 4 10 100
 do
-	start=$SECONDS
-	./ex3 $n $m
-	duration=$((SECONDS - start))
-	echo "Completed in $duration seconds" >> ex3.txt
+	echo "m = $m" >> ex3.txt
+	{ time ./ex3 $n $m; } 2>>ex3.txt
+	echo >> ex3.txt
 done
