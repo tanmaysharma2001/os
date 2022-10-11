@@ -1,0 +1,2 @@
+Round-robin has the least avergae WT and turnaround time as the process are being divided in time quantums leading for a process to be completed in nearly parallel.
+As a result, average waiting time and average turnaround time is reduced.

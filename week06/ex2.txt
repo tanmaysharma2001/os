@@ -1,0 +1,2 @@
+The shortest job algorithm chooses the process with the lowest burst time that arrived in the CPU.
+This reduces the average waiting time and so average turnaround time.
