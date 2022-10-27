@@ -1,0 +1,3 @@
+Logical Address or Virtual Address: The logical address is used as a reference to access the physcial address. The reason it is called virtual cause it's doesn't exist physically, it is generated during program execution, therefore known as Virtual Address.
+
+Physical address: It is the address of the memory unit which exists in the memory.
