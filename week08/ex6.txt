@@ -1,0 +1,7 @@
+In ex6, we are given that the memory uses a 16-bit virtual memory adress. Also we are given that a page size in the page table is 8 KB.
+
+We know memory is byte-adressable. So, every a 16-bit adrees space will have memory size of 2^(16) bytes.
+
+And know we know that, a page size is 8 KB = 2 ^ (13) bytes.
+
+So by unitary method, we get number of pages to be 2 ^ (3) = 8 pages.
