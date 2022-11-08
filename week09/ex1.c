@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <limits.h>
+#include <stdlib.h>
 
 // Ageing Algorithm
 // number of page frames - parameters
@@ -7,17 +8,19 @@
 #define MAX_PAGES 1000
 #define AGE_LIM 32
 
-int main()
+int main(int argc, char *argv[])
 {
     // number of page frames
-    printf("Enter number of page frames: ");
-    unsigned int n;
-    scanf("%d", &n);
+    if(argc != 2) {
+        printf("Please enter the number of page frames.");
+        return 1;
+    }
+    unsigned int n = atoi(argv[1]);
 
-    unsigned int pageTable[n];
+    int pageTable[n];
 
     for(int i = 0; i < n; i++) {
-        pageTable[i] = 0;
+        pageTable[i] = -1;
     }
 
     int numberOfPages = 0;
@@ -27,28 +30,18 @@ int main()
         pages[i] = 0;
     }
 
-    printf("Type how you want the input to be:\n0 - for input file\t1 - for console\n");
-    int response;
-    scanf("%d", &response);
-
-    if(response == 1) {
-        printf("Enter number of pages:");
-        scanf("%d", &numberOfPages);
-
-        for (int i = 0; i < numberOfPages; i++)
-        {
-            scanf("%d", &pages[i]);
-        }
+    FILE* inputFile = fopen("Lab 09 input.txt", "r");
+    if(inputFile == NULL) {
+        printf("Cannot read input file.");
+        return 1;
     }
-    else {
-        FILE* inputFile = fopen("/home/tanmay/Tanmay/os/week09/input.txt", "r");
-        int page;
-        while(fscanf(inputFile, "%d", &page) != EOF) {
-            pages[numberOfPages] = page;
-            numberOfPages++;
-        }
-        fclose(inputFile);
+
+    int page;
+    while(fscanf(inputFile, "%d", &page) != EOF) {
+        pages[numberOfPages] = page;
+        numberOfPages++;
     }
+    fclose(inputFile);
 
     // pages time values
     // indexing by pages
@@ -59,13 +52,6 @@ int main()
     }
 
     int misses = 0;
-
-//    for(int i = 0; i < numberOfPages; i++) {
-//        printf("%d ", pages[i]);
-//    }
-//    printf("\n");
-
-//    printf("Hello");
 
     int hits = 0;
 
@@ -92,8 +78,12 @@ int main()
             int minIndex = 0;
 
             for(int j = 0; j < n; j++) {
+                if (pageTable[j] == -1) {
+                    minIndex = j;
+                    break;
+                }
                 unsigned int pageValue = pageValues[pageTable[j]];
-                if(pageValue <= minTime) {
+                if(pageValue < minTime) {
                     minTime = pageValue;
                     minIndex = j;
                 }
