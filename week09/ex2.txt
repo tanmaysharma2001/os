@@ -1,0 +1,21 @@
+5 page frames:
+
+Sequence with high hit/miss ratio:
+1 1 1 1 1  2 2 2 2 2
+ Hits: 8, Misses: 2
+ Hits/Misses = 4.00000
+
+The reason of high hits is that the pages which are getting referenced
+were referenced in the recent times which result increases their likelihood
+to be present in the page table.
+
+Sequence with low hit/miss ratio:
+1 2 3 4 5 6 7 8 9 10 11 12 13 5 4 3 2 1 6 7 8 9 10 11 12 13
+ Hits: 0, Misses: 26
+    Hits/Misses = 0.000000
+
+The reason of the low hit/miss ratio is that the pages which were not accessed recently
+will cause a page fault when accesed at distant time interval because of their increased
+chance of swapping from the page table. (According to the ageing algorithm)
+
+This results from the principle of time locality.
