@@ -1,0 +1,4 @@
+FILE	HARDLINKS
+file1	2
+link1	2
+file2	1

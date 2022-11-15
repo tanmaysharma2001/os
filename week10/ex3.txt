@@ -1,0 +1,48 @@
+-rwxrwxrwx 1 tanmay tanmay 13 Nov 14 22:52 _ex3.txt
+
+
+-rw-rw-rw- 1 tanmay tanmay 13 Nov 14 22:52 _ex3.txt
+
+
+-rwxrw-rwx 1 tanmay tanmay 13 Nov 14 22:52 _ex3.txt
+
+
+-rwxrwxrwx 1 tanmay tanmay 13 Nov 14 22:52 _ex3.txt
+
+
+
+The method which can be used to specify the permissions granted of a file in
+octal system, where the first, second and third is of user, group and others
+respectively.
+
+For example, a permission of 712 for a file X represents:
+	u	g	o
+	7	1	2
+
+Now, in binary system they are:
+	rwx	rwx	rwx
+	111	001	010
+, where r - stands for read permissions, w - for write permissions, and
+ x - for execute permissions.
+
+so, 	rwx
+  - 7 - 111	-> can read, write and execute the file
+  - 1 - 001	-> can only execute, no read/write
+  - 2 - 010	-> can only write
+
+Now, the questions from the lab:
+
+1. what does 660 mean for ex3.txt?
+ - u - 6 - 110	-> user can read, and write but not execute
+ - g - 6 - 110	-> group can read, and write but not execute
+ - o - 0 - 000	-> others cannot read, write and execute
+
+2. what does 775 mean for ex3.txt?
+ - u - 7 - 111	-> user can read, and write and execute
+ - g - 7 - 111	-> group can read, and write and execute
+ - o - 5 - 101	-> others can read, and execute, but not write.
+ 
+3. what does 777 mean for ex3.txt?
+ - u - 7 - 111	-> user can read, and write and execute
+ - g - 7 - 111	-> group can read, and write and execute
+ - o - 7 - 111	-> others can read, write and execute.

@@ -1,4 +1,4 @@
-5 page frames:
+Number of page frames: 3
 
 Sequence with high hit/miss ratio:
 1 1 1 1 1  2 2 2 2 2
