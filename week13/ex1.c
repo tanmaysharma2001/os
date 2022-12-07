@@ -3,6 +3,8 @@
 #include <stdlib.h>
 #include <stdbool.h>
 
+// deadlock algorithm
+
 #define MAX_PROCESSES_LENGTH 500
 #define MAX_RESOURCES_LENGTH 500
 #define MAX_LINE_LENGTH 256
