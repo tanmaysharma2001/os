@@ -1,0 +1,7 @@
+Recovery, pervention and avodiance are the three ways of deadling with deadlock algorithm:
+
+1. Recovery - Before attempting to resolve the impasse, the operating system allows it to occur. To accomplish this, it can try to starve the process, resulting in a preemptive resource deadlock. It also supports rollback, so checkpoints should be set while the program is running in order to return to them. Finally, it can simply terminate the process that is causing the deadlock. This is the most basic method and should be avoided at all costs.
+
+2. Prevention - In order to avoid deadlocks, the method is to ensure that at least one of the four conditions (Mutual Exclusion, Hold and Wait, No Preemption, and Circular Wait) is never met. Each condition has a distinct method of prevention, some of which are more straightforward than others. They all specify the maximum number of resources that a process may use.
+
+3. Avoidance - It is the right choice because it avoids a deadlock while not wasting resources in the way that prevention does. It only works if certain information is provided ahead of time, such as determining whether or not a specific resource is safe to provide.
