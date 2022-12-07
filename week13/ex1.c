@@ -12,7 +12,7 @@
 
 int main()
 {
-    FILE *input = fopen("/home/tanmay/Tanmay/os/week13/input_ok.txt", "r");
+    FILE *input = fopen("/home/tanmay/Tanmay/os/week13/input_dl.txt", "r");
     if (input != NULL) {
         char buffer[MAX_LINE_LENGTH];
 
@@ -98,7 +98,7 @@ int main()
                     }
                 }
 
-                FILE *output = fopen("/home/tanmay/Tanmay/os/week13/output_ok.txt", "w");
+                FILE *output = fopen("/home/tanmay/Tanmay/os/week13/output_dl.txt", "w");
 
                 bool deadlock = false;
                 for (int i = 0; i < n_processes; i++) deadlock |= !(process_ok[i]);
